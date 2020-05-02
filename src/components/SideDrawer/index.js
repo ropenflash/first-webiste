@@ -5,7 +5,8 @@ import './sideDrawer.scss'
 const blockName = 'SideDrawer'
 export default class SideDrawer extends React.Component {
     render() {
-        return <div className={`${blockName}`}>
+        console.log(this.props.right)
+        return <div className={`${blockName}`} style={{ right: this.props.right }}>
 
             <div className={`${blockName}__title`}>ROPENFLASH</div>
 

@@ -19,8 +19,10 @@ export default class Header extends React.Component {
     toggleSideDrawer = () => {
         this.setState({ sideDrawer: !this.state.sideDrawer })
     }
+
     render() {
         const { sideDrawer } = this.state
+        const right = sideDrawer ? '-500px' : '0px'
         return (
             <div className={blockName}>
                 <nav className={`${blockName}__navbar`}>
@@ -36,9 +38,9 @@ export default class Header extends React.Component {
                     </ul>
                 </nav>
                 {!sideDrawer ? (<Small><BackDrop onclick={this.toggleSideDrawer} /></Small>) : null}
-                {!sideDrawer ? (<Small>
-                    <SideDrawer />
-                </Small>) : null}
+                <Small>
+                    <SideDrawer right={right} />
+                </Small>
             </div>)
     }
 }
