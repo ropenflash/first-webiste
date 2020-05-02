@@ -1,10 +1,20 @@
+@import "./../../styles/mixin.scss";
+
 .Header {
   &__navbar {
     display: flex;
-    height: 50px;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     background-color: black;
+    width: 100vh;
+
+    @include medium() {
+      flex-direction: row;
+      height: 50px;
+      align-items: center;
+      justify-content: space-around;
+      background-color: black;
+      width: 100%;
+    }
   }
 
   &__home {
@@ -33,7 +43,12 @@
 
   &__nav-links {
     display: flex;
+    flex-direction: column;
     text-decoration: none;
+
+    @include medium() {
+      flex-direction: row;
+    }
   }
 
   &__nav-item {
