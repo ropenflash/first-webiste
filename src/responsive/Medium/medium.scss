@@ -1,0 +1,9 @@
+@import "./../../styles/mixin.scss";
+
+.Medium {
+  display: none;
+  transition: ease-in-out 0.1s;
+  @include medium() {
+    display: initial;
+  }
+}

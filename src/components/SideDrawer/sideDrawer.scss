@@ -1,0 +1,47 @@
+.SideDrawer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 50vw;
+  background-color: #222b34;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  transition: ease-in 0.3s;
+
+  &__title {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #222b34;
+    color: rgb(241, 235, 235);
+    padding: 5px 20px;
+  }
+
+  &__navbar {
+    margin-top: 20px;
+  }
+  &__nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: #222b34;
+    padding: 5px 20px;
+  }
+
+  &__nav-item a {
+    text-decoration: none;
+    color: rgb(241, 235, 235);
+  }
+
+  &__nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__nav-item:hover {
+    background-color: #2d363e;
+  }
+}

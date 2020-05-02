@@ -21,8 +21,9 @@ function App() {
           <Route path="/home" component={MainContent} />
           <Route path="/calisthenics" component={Calisthenics} />
           <Route path="/rope-jumping" component={RopeJumping} />
-          <Route path="/about" component={About} />
           <Route path="/contact" component={ContactUs} />
+          <Route path="/about" component={About} />
+          <Route path="/qa" component={About} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/terms-conditions" component={TermsAndConditions} />
         </Switch>
