@@ -1,14 +1,11 @@
-.MainContent {
-  &__rope {
-    margin-top: 20px;
-    height:100px;
-    width:200px;
-  }
+@import "./../../styles/mixin.scss";
 
-  @media screen and (min-width:786px){
-      &__rope{
-          height:100%;
-          width:100%;
-      }
+.MainContent {
+  flex: 1 0 auto;
+
+  &__rope {
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
   }
 }

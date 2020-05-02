@@ -3,8 +3,8 @@
 .Footer {
   position: absolute;
   bottom: 0px;
-  height: 30vh;
-  width: 100vw;
+  width: 100%;
+  flex-shrink: 0;
 
   &__navbar {
     display: flex;
@@ -28,6 +28,10 @@
   &__nav-item {
     display: inline-block;
     padding: 10px;
+    text-align: center;
+    @include medium() {
+      text-align: initial;
+    }
   }
   &__nav-item a {
     text-decoration: none;
