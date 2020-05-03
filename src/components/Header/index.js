@@ -39,7 +39,7 @@ export default class Header extends React.Component {
                 </nav>
                 {!sideDrawer ? (<Small><BackDrop onclick={this.toggleSideDrawer} /></Small>) : null}
                 <Small>
-                    <SideDrawer right={right} />
+                    <SideDrawer right={right} onclick={this.toggleSideDrawer} />
                 </Small>
             </div>)
     }
