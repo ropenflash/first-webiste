@@ -1,7 +1,7 @@
 @import "./../../styles/mixin.scss";
 
 .Footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   flex-shrink: 0;
