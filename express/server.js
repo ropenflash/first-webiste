@@ -1,11 +1,12 @@
-const dotenv = require('dotenv')
-dotenv.config({ path: './../.env' })
+const express = require('express')
+const path = require('path')
+const serverless = require('serverless-http')
+const app = express()
 
-const logger = require('../logger')
-const server = require('../app')
+app.use(express.static(path.resolve('build')))
 
-const port = process.env.PORT || 3000
-
-server.listen(port, () => {
-    logger.log('info', `Application is running on ${port}`)
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve('build/index.html'))
 })
+module.exports = app
+module.exports.handler = serverless(app)

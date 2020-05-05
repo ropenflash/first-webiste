@@ -24,7 +24,7 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "prepush": "npm run eslint",
-    "dev": "nodemon server.js",
+    "dev": "nodemon server-local.js",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
